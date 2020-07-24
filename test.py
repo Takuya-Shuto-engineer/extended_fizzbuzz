@@ -26,6 +26,11 @@ if __name__ == "__main__":
     ###########################################
     # FizzBuzzの拡張版の処理
     ###########################################
+    _count = 0
     for _i, _s in _data_list:
         if _m % _i == 0:
             print(_s, end="")
+            _count = _count + 1
+    
+    if _count == 0:
+        print(_m)
